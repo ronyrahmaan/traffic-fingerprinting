@@ -1,0 +1,214 @@
+{
+  "metadata": {
+    "generated": "2026-03-03T20:14:28.239133",
+    "dataset": "Website Traffic (Our Collection)",
+    "num_traces": 4999,
+    "num_classes": 50,
+    "traces_per_class": "~99",
+    "random_seed": 42,
+    "cross_validation": "5-fold stratified",
+    "capture_period": "March 1-3, 2026"
+  },
+  "algorithm_results": {
+    "LL-Jaccard": {
+      "accuracy": 94.1,
+      "fold_accuracies": [
+        94.6,
+        93.8,
+        92.4,
+        94.3,
+        95.2
+      ],
+      "time_sec": 12.3
+    },
+    "LL-NB": {
+      "accuracy": 84.6,
+      "fold_accuracies": [
+        85.3,
+        84.8,
+        85.1,
+        84.1,
+        83.7
+      ],
+      "features": 50,
+      "time_sec": 0.0
+    },
+    "VNG++": {
+      "accuracy": 54.3,
+      "fold_accuracies": [
+        52.5,
+        55.6,
+        53.5,
+        56.0,
+        53.9
+      ],
+      "features": 403,
+      "time_sec": 0.1
+    },
+    "AdaBoost": {
+      "accuracy": 89.7,
+      "fold_accuracies": [
+        89.7,
+        89.5,
+        90.6,
+        89.5,
+        89.3
+      ],
+      "features": 205,
+      "time_sec": 210.4
+    },
+    "CUMUL+XGB": {
+      "accuracy": 91.4,
+      "fold_accuracies": [
+        92.1,
+        89.5,
+        91.9,
+        92.3,
+        91.2
+      ],
+      "features": 104,
+      "time_sec": 95.4
+    },
+    "Timing+XGB": {
+      "accuracy": 86.9,
+      "fold_accuracies": [
+        86.4,
+        87.2,
+        87.6,
+        85.7,
+        87.7
+      ],
+      "features": 70,
+      "time_sec": 84.9
+    },
+    "Combined+XGB": {
+      "accuracy": 92.0,
+      "fold_accuracies": [
+        92.6,
+        91.6,
+        92.9,
+        91.7,
+        91.0
+      ],
+      "features": 179,
+      "time_sec": 87.1
+    },
+    "Combined+RF": {
+      "accuracy": 92.7,
+      "fold_accuracies": [
+        93.2,
+        91.2,
+        93.2,
+        92.8,
+        92.9
+      ],
+      "features": 179,
+      "time_sec": 3.5
+    }
+  },
+  "dataset_stats": {
+    "num_traces": 4999,
+    "num_classes": 50,
+    "packets": {
+      "mean": 8521.7,
+      "median": 4968,
+      "min": 1,
+      "max": 443726,
+      "std": 12863.6
+    },
+    "duration": {
+      "mean": 17.852,
+      "min": 0.0,
+      "max": 64.913
+    },
+    "total_bytes": {
+      "mean": 7586153.0,
+      "min": 40,
+      "max": 629620769
+    },
+    "bursts": {
+      "mean": 1204.2,
+      "min": 1,
+      "max": 33369
+    }
+  },
+  "per_site_accuracy": {
+    "algorithm": "LL-Jaccard",
+    "top_10": {
+      "nbcnews": 100.0,
+      "newegg": 100.0,
+      "reuters": 100.0,
+      "rottentomatoes": 100.0,
+      "soundcloud": 100.0,
+      "target": 100.0,
+      "twitter": 100.0,
+      "walmart": 100.0,
+      "wayfair": 100.0,
+      "wired": 100.0
+    },
+    "bottom_10": {
+      "reddit": 52.0,
+      "tumblr": 74.0,
+      "washingtonpost": 74.0,
+      "mastodon": 76.0,
+      "medium": 79.0,
+      "facebook": 80.0,
+      "threads": 80.0,
+      "crunchyroll": 86.0,
+      "hackernews": 86.9,
+      "netflix": 87.0
+    }
+  },
+  "per_category_accuracy": {
+    "algorithm": "LL-Jaccard",
+    "categories": {
+      "ecommerce": 99.4,
+      "entertainment": 95.6,
+      "news": 95.1,
+      "social": 85.8,
+      "tech": 94.4
+    }
+  },
+  "cross_domain_comparison": {
+    "LL-Jaccard": {
+      "website": 94.1,
+      "alexa": 17.6,
+      "difference": 76.5
+    },
+    "LL-NB": {
+      "website": 84.6,
+      "alexa": 34.1,
+      "difference": 50.5
+    },
+    "VNG++": {
+      "website": 54.3,
+      "alexa": 24.2,
+      "difference": 30.1
+    },
+    "AdaBoost": {
+      "website": 89.7,
+      "alexa": 30.3,
+      "difference": 59.4
+    },
+    "CUMUL+XGB": {
+      "website": 91.4,
+      "alexa": 30.8,
+      "difference": 60.6
+    },
+    "Timing+XGB": {
+      "website": 86.9,
+      "alexa": 17.2,
+      "difference": 69.7
+    },
+    "Combined+XGB": {
+      "website": 92.0,
+      "alexa": 32.4,
+      "difference": 59.6
+    },
+    "Combined+RF": {
+      "website": 92.7,
+      "alexa": 39.2,
+      "difference": 53.5
+    }
+  }
+}
