@@ -1,0 +1,59 @@
+# Data — too large or not ours to distribute
+data/collected/
+data/raw/
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+.venv/
+
+# Secrets
+.env
+
+# macOS
+.DS_Store
+Thumbs.db
+
+# Raw packet captures (anywhere in the tree)
+*.pcap
+*.pcapng
+
+# Temporary build artifacts
+figures/embedded.json
+
+# Website results owned by root process (capture logs, etc.)
+results/website_dataset/
+
+# Node (book build tooling)
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+
+# Ruff / Jupyter cache
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Internal notes (not for submission)
+doc/
+assignment_instructions.md
+learning/
+book/
+
+# Keep these explicitly
+!src/
+!scripts/
+!figures/alexa/*.png
+!figures/website/*.png
+!results/alexa_dataset/
+!results/website_eval/
+!pyproject.toml
+!README.md

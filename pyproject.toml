@@ -1,0 +1,37 @@
+[project]
+name = "traffic-fingerprinting"
+version = "0.1.0"
+description = "Voice Command Fingerprinting — Reproduction of Kennedy et al. (IEEE CNS 2019)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "scikit-learn>=1.4",
+    "scapy>=2.5",
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    "pyyaml>=6.0",
+    "dpkt>=1.9.8",
+    "playwright>=1.58.0",
+    "xgboost>=3.2.0",
+    "streamlit>=1.55.0",
+    "plotly>=6.6.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

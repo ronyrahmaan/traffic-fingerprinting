@@ -1,0 +1,883 @@
+{
+  "metadata": {
+    "generated": "2026-02-27T05:36:45.202355",
+    "dataset": "Alexa Voice Commands (Kennedy et al., IEEE CNS 2019)",
+    "num_traces": 1000,
+    "num_classes": 100,
+    "random_seed": 42,
+    "cross_validation": "5-fold stratified"
+  },
+  "paper_results": {
+    "LL-Jaccard": 17.4,
+    "LL-NB": 33.8,
+    "VNG++": 24.9,
+    "AdaBoost": 33.4
+  },
+  "algorithm_results": {
+    "LL-Jaccard": {
+      "accuracy": 17.6,
+      "fold_accuracies": [
+        17.0,
+        15.0,
+        17.5,
+        17.0,
+        21.5
+      ],
+      "time_sec": 0.3
+    },
+    "LL-NB": {
+      "accuracy": 34.1,
+      "fold_accuracies": [
+        32.0,
+        31.5,
+        37.5,
+        35.0,
+        34.5
+      ],
+      "features": 50,
+      "time_sec": 0.0
+    },
+    "VNG++": {
+      "accuracy": 24.2,
+      "fold_accuracies": [
+        19.5,
+        24.0,
+        25.5,
+        25.0,
+        27.0
+      ],
+      "features": 403,
+      "time_sec": 0.1
+    },
+    "AdaBoost": {
+      "accuracy": 30.3,
+      "fold_accuracies": [
+        30.5,
+        35.0,
+        29.5,
+        25.0,
+        31.5
+      ],
+      "features": 205,
+      "time_sec": 287.9
+    },
+    "CUMUL+XGB": {
+      "accuracy": 30.8,
+      "fold_accuracies": [
+        26.0,
+        34.5,
+        27.5,
+        31.0,
+        35.0
+      ],
+      "features": 104,
+      "time_sec": 126.1
+    },
+    "Timing+XGB": {
+      "accuracy": 17.2,
+      "fold_accuracies": [
+        16.5,
+        17.0,
+        15.5,
+        16.5,
+        20.5
+      ],
+      "features": 70,
+      "time_sec": 121.4
+    },
+    "Combined+XGB": {
+      "accuracy": 32.4,
+      "fold_accuracies": [
+        27.5,
+        33.0,
+        33.5,
+        30.0,
+        38.0
+      ],
+      "features": 179,
+      "time_sec": 118.3
+    },
+    "Combined+RF": {
+      "accuracy": 39.2,
+      "fold_accuracies": [
+        36.0,
+        41.0,
+        36.0,
+        37.5,
+        45.5
+      ],
+      "features": 179,
+      "time_sec": 1.8
+    }
+  },
+  "dataset_stats": {
+    "num_traces": 1000,
+    "num_classes": 100,
+    "packets": {
+      "mean": 618.9,
+      "median": 460,
+      "min": 34,
+      "max": 8658,
+      "std": 797.3
+    },
+    "duration": {
+      "mean": 6.971,
+      "min": 0.768,
+      "max": 153.44
+    },
+    "total_bytes": {
+      "mean": 267625.0,
+      "min": 15033,
+      "max": 6385105
+    },
+    "bursts": {
+      "mean": 258.8,
+      "min": 11,
+      "max": 1973
+    }
+  },
+  "trace_example": {
+    "label": "do_dogs_dream",
+    "filename": "do_dogs_dream_5_3.csv",
+    "num_packets": 461,
+    "duration": 3.299,
+    "packets": [
+      {
+        "time": 0.0,
+        "size": 176,
+        "direction": 1
+      },
+      {
+        "time": 0.0059,
+        "size": 1500,
+        "direction": 1
+      },
+      {
+        "time": 0.0063,
+        "size": 1500,
+        "direction": 1
+      },
+      {
+        "time": 0.0081,
+        "size": 1500,
+        "direction": 1
+      },
+      {
+        "time": 0.0081,
+        "size": 912,
+        "direction": 1
+      },
+      {
+        "time": 0.0088,
+        "size": 1500,
+        "direction": 1
+      },
+      {
+        "time": 0.0088,
+        "size": 162,
+        "direction": 1
+      },
+      {
+        "time": 0.0235,
+        "size": 273,
+        "direction": 1
+      },
+      {
+        "time": 0.0352,
+        "size": 176,
+        "direction": 1
+      },
+      {
+        "time": 0.0363,
+        "size": 40,
+        "direction": -1
+      },
+      {
+        "time": 0.0378,
+        "size": 1500,
+        "direction": 1
+      },
+      {
+        "time": 0.0401,
+        "size": 40,
+        "direction": -1
+      },
+      {
+        "time": 0.0409,
+        "size": 65,
+        "direction": 1
+      },
+      {
+        "time": 0.0415,
+        "size": 1500,
+        "direction": 1
+      },
+      {
+        "time": 0.0475,
+        "size": 40,
+        "direction": -1
+      },
+      {
+        "time": 0.0475,
+        "size": 40,
+        "direction": -1
+      },
+      {
+        "time": 0.0487,
+        "size": 40,
+        "direction": -1
+      },
+      {
+        "time": 0.0487,
+        "size": 40,
+        "direction": -1
+      },
+      {
+        "time": 0.049,
+        "size": 1500,
+        "direction": 1
+      },
+      {
+        "time": 0.0492,
+        "size": 785,
+        "direction": 1
+      },
+      {
+        "time": 0.0598,
+        "size": 40,
+        "direction": -1
+      },
+      {
+        "time": 0.0696,
+        "size": 113,
+        "direction": -1
+      },
+      {
+        "time": 0.0721,
+        "size": 40,
+        "direction": -1
+      },
+      {
+        "time": 0.0725,
+        "size": 60,
+        "direction": 1
+      },
+      {
+        "time": 0.0774,
+        "size": 40,
+        "direction": -1
+      },
+      {
+        "time": 0.0827,
+        "size": 40,
+        "direction": -1
+      },
+      {
+        "time": 0.0896,
+        "size": 40,
+        "direction": -1
+      },
+      {
+        "time": 0.0991,
+        "size": 1500,
+        "direction": 1
+      },
+      {
+        "time": 0.0994,
+        "size": 1500,
+        "direction": 1
+      },
+      {
+        "time": 0.1012,
+        "size": 1500,
+        "direction": 1
+      },
+      {
+        "time": 0.1012,
+        "size": 1500,
+        "direction": 1
+      },
+      {
+        "time": 0.1012,
+        "size": 398,
+        "direction": 1
+      },
+      {
+        "time": 0.1101,
+        "size": 52,
+        "direction": -1
+      },
+      {
+        "time": 0.1113,
+        "size": 40,
+        "direction": 1
+      },
+      {
+        "time": 0.1136,
+        "size": 298,
+        "direction": 1
+      },
+      {
+        "time": 0.1193,
+        "size": 158,
+        "direction": 1
+      },
+      {
+        "time": 0.1332,
+        "size": 158,
+        "direction": 1
+      },
+      {
+        "time": 0.1386,
+        "size": 40,
+        "direction": -1
+      },
+      {
+        "time": 0.1386,
+        "size": 40,
+        "direction": -1
+      },
+      {
+        "time": 0.1433,
+        "size": 40,
+        "direction": -1
+      },
+      {
+        "time": 0.1433,
+        "size": 40,
+        "direction": -1
+      },
+      {
+        "time": 0.1436,
+        "size": 82,
+        "direction": -1
+      },
+      {
+        "time": 0.1493,
+        "size": 40,
+        "direction": -1
+      },
+      {
+        "time": 0.1542,
+        "size": 40,
+        "direction": -1
+      },
+      {
+        "time": 0.1542,
+        "size": 177,
+        "direction": -1
+      },
+      {
+        "time": 0.1559,
+        "size": 40,
+        "direction": 1
+      },
+      {
+        "time": 0.1563,
+        "size": 91,
+        "direction": 1
+      },
+      {
+        "time": 0.1619,
+        "size": 132,
+        "direction": -1
+      },
+      {
+        "time": 0.1619,
+        "size": 78,
+        "direction": -1
+      },
+      {
+        "time": 0.1675,
+        "size": 40,
+        "direction": 1
+      },
+      {
+        "time": 0.1704,
+        "size": 158,
+        "direction": 1
+      },
+      {
+        "time": 0.1826,
+        "size": 158,
+        "direction": 1
+      },
+      {
+        "time": 0.1964,
+        "size": 158,
+        "direction": 1
+      },
+      {
+        "time": 0.2099,
+        "size": 40,
+        "direction": -1
+      },
+      {
+        "time": 0.2101,
+        "size": 158,
+        "direction": 1
+      },
+      {
+        "time": 0.2328,
+        "size": 40,
+        "direction": -1
+      },
+      {
+        "time": 0.2428,
+        "size": 40,
+        "direction": -1
+      },
+      {
+        "time": 0.2445,
+        "size": 751,
+        "direction": 1
+      },
+      {
+        "time": 0.2449,
+        "size": 158,
+        "direction": 1
+      },
+      {
+        "time": 0.2593,
+        "size": 158,
+        "direction": 1
+      }
+    ]
+  },
+  "bin_width_sweep": [
+    {
+      "bin_width": 10,
+      "accuracy": 29.6,
+      "features": 300
+    },
+    {
+      "bin_width": 20,
+      "accuracy": 24.8,
+      "features": 150
+    },
+    {
+      "bin_width": 30,
+      "accuracy": 24.0,
+      "features": 100
+    },
+    {
+      "bin_width": 40,
+      "accuracy": 25.4,
+      "features": 75
+    },
+    {
+      "bin_width": 50,
+      "accuracy": 27.2,
+      "features": 60
+    },
+    {
+      "bin_width": 60,
+      "accuracy": 34.1,
+      "features": 50
+    },
+    {
+      "bin_width": 70,
+      "accuracy": 28.8,
+      "features": 42
+    },
+    {
+      "bin_width": 80,
+      "accuracy": 31.2,
+      "features": 37
+    },
+    {
+      "bin_width": 90,
+      "accuracy": 29.1,
+      "features": 33
+    },
+    {
+      "bin_width": 100,
+      "accuracy": 29.3,
+      "features": 30
+    },
+    {
+      "bin_width": 110,
+      "accuracy": 32.1,
+      "features": 27
+    },
+    {
+      "bin_width": 120,
+      "accuracy": 29.0,
+      "features": 25
+    },
+    {
+      "bin_width": 130,
+      "accuracy": 30.7,
+      "features": 23
+    },
+    {
+      "bin_width": 140,
+      "accuracy": 30.9,
+      "features": 21
+    },
+    {
+      "bin_width": 150,
+      "accuracy": 30.9,
+      "features": 20
+    }
+  ],
+  "per_class_accuracy_llnb": {
+    "all": {
+      "alexa": 80.0,
+      "do_dogs_dream": 50.0,
+      "do_you_like_cats_or_dogs": 40.0,
+      "flip_a_coin": 20.0,
+      "give_me_a_dinosaur_fact": 0.0,
+      "good_morning": 70.0,
+      "help": 10.0,
+      "how_deep_is_the_indian_ocean": 50.0,
+      "how_do_you_spell_appreciate": 50.0,
+      "how_far_away_is_the_moon": 10.0,
+      "how_hot_is_the_sun": 40.0,
+      "how_many_days_are_in_september": 20.0,
+      "how_many_days_in_a_year": 0.0,
+      "how_many_days_until_christmas": 40.0,
+      "how_many_days_until_thanksgiving": 50.0,
+      "how_many_fantasy_points_does_lebron_james_have": 70.0,
+      "how_many_ounces_in_a_pound": 40.0,
+      "how_many_seconds_in_a_year": 20.0,
+      "how_many_teaspoons_in_a_table_spoon": 20.0,
+      "how_much_is_an_ounce_of_gold": 30.0,
+      "how_old_are_you": 50.0,
+      "how_old_is_henry_winkler": 10.0,
+      "how_old_is_serena_williams": 50.0,
+      "how_tall_is_steph_curry": 30.0,
+      "how_tall_is_the_empire_state_building": 20.0,
+      "how_tall_is_the_rock": 50.0,
+      "is_a_tomato_a_fruit_or_a_vegetable": 60.0,
+      "pick_a_number": 40.0,
+      "play_npr": 100.0,
+      "set_a_timer_for_thirty_seconds": 20.0,
+      "set_volume_to_five": 50.0,
+      "surprise_me": 50.0,
+      "talk_like_a_pirate": 30.0,
+      "tell_me_a_barbecue_joke": 10.0,
+      "tell_me_a_coffee_joke": 0.0,
+      "tell_me_a_fun_fact": 20.0,
+      "tell_me_a_halloween_hack": 0.0,
+      "tell_me_a_joke": 0.0,
+      "tell_me_a_spooky_story": 70.0,
+      "tell_me_a_star_wars_joke": 30.0,
+      "tell_me_a_story_about_robots": 30.0,
+      "tell_me_some_good_news": 30.0,
+      "tell_me_something_weird": 50.0,
+      "translate_good_morning_to_spanish": 50.0,
+      "what's_the_weather_going_to_be_like_this_weekend": 50.0,
+      "what_are_the_most_popular_books_this_week": 40.0,
+      "what_are_the_standings_in_the_english_premier_league": 70.0,
+      "what_are_you_thankful_for": 50.0,
+      "what_happened_in_the_midterm_election": 40.0,
+      "what_is_gluten": 70.0,
+      "what_is_homecoming_about": 30.0,
+      "what_is_in_the_news": 60.0,
+      "what_is_my_sports_update": 40.0,
+      "what_is_my_traffic_report": 10.0,
+      "what_is_roblox": 50.0,
+      "what_is_the_afc_north_standings": 20.0,
+      "what_is_the_capital_of_spain": 40.0,
+      "what_is_the_colts_pats_score": 40.0,
+      "what_is_the_date_tomorrow": 20.0,
+      "what_is_the_number_one_song_this_week": 20.0,
+      "what_is_the_scariest_movie_of_all_time": 50.0,
+      "what_is_the_score_of_the_red_sox_game": 0.0,
+      "what_is_the_time_in_singapore": 0.0,
+      "what_is_the_weather": 30.0,
+      "what_is_zero_divided_by_zero": 10.0,
+      "what_movies_are_playing": 60.0,
+      "what_the_best_comedy_movie": 10.0,
+      "what_time_is_it": 50.0,
+      "what_time_is_it_in_hawaii": 0.0,
+      "what_time_is_sunset": 60.0,
+      "whats_another_word_for_happy": 10.0,
+      "whats_the_fourth_book_in_narnia_series": 40.0,
+      "whats_the_history_of_labor_day": 40.0,
+      "whats_the_longest_word": 10.0,
+      "whats_the_price_of_bitcoin": 20.0,
+      "whats_the_question_of_the_day": 50.0,
+      "whats_the_score_of_the_eagles_game": 0.0,
+      "whats_the_weather_for_sunday": 20.0,
+      "whats_trending": 0.0,
+      "whats_your_favorite_flower": 50.0,
+      "whats_your_favorite_hobby": 20.0,
+      "whats_your_favorite_sport": 40.0,
+      "when_does_daylight_saving_time_end": 30.0,
+      "when_is_hanukkah": 60.0,
+      "when_is_the_next_full_moon": 0.0,
+      "where_did_yoda_live": 30.0,
+      "where_is_mount_rushmore": 30.0,
+      "who_do_you_love": 30.0,
+      "who_is_in_mastodon": 30.0,
+      "who_is_winning_the_world_series": 30.0,
+      "who_is_your_favorite_poet": 20.0,
+      "who_plays_wolverine_in_xmen": 60.0,
+      "who_scored_for_the_golden_knights": 30.0,
+      "who_wrote_anna_karenina": 0.0,
+      "who_wrote_elevation": 10.0,
+      "whos_playing_monday_night_football": 80.0,
+      "whos_your_favorite_author": 30.0,
+      "whos_your_favorite_superhero": 10.0,
+      "why_do_leaves_change_color_in_the_fall": 80.0,
+      "will_it_rain_tomorrow": 70.0
+    },
+    "top_10": {
+      "good_morning": 70.0,
+      "how_many_fantasy_points_does_lebron_james_have": 70.0,
+      "tell_me_a_spooky_story": 70.0,
+      "what_are_the_standings_in_the_english_premier_league": 70.0,
+      "what_is_gluten": 70.0,
+      "will_it_rain_tomorrow": 70.0,
+      "alexa": 80.0,
+      "whos_playing_monday_night_football": 80.0,
+      "why_do_leaves_change_color_in_the_fall": 80.0,
+      "play_npr": 100.0
+    },
+    "bottom_10": {
+      "give_me_a_dinosaur_fact": 0.0,
+      "how_many_days_in_a_year": 0.0,
+      "tell_me_a_coffee_joke": 0.0,
+      "tell_me_a_halloween_hack": 0.0,
+      "tell_me_a_joke": 0.0,
+      "what_is_the_score_of_the_red_sox_game": 0.0,
+      "what_is_the_time_in_singapore": 0.0,
+      "what_time_is_it_in_hawaii": 0.0,
+      "whats_the_score_of_the_eagles_game": 0.0,
+      "whats_trending": 0.0
+    }
+  },
+  "per_class_accuracy_best": {
+    "algorithm": "Combined+RF",
+    "all": {
+      "alexa": 100.0,
+      "do_dogs_dream": 50.0,
+      "do_you_like_cats_or_dogs": 50.0,
+      "flip_a_coin": 60.0,
+      "give_me_a_dinosaur_fact": 0.0,
+      "good_morning": 70.0,
+      "help": 40.0,
+      "how_deep_is_the_indian_ocean": 50.0,
+      "how_do_you_spell_appreciate": 20.0,
+      "how_far_away_is_the_moon": 10.0,
+      "how_hot_is_the_sun": 50.0,
+      "how_many_days_are_in_september": 20.0,
+      "how_many_days_in_a_year": 40.0,
+      "how_many_days_until_christmas": 20.0,
+      "how_many_days_until_thanksgiving": 50.0,
+      "how_many_fantasy_points_does_lebron_james_have": 60.0,
+      "how_many_ounces_in_a_pound": 30.0,
+      "how_many_seconds_in_a_year": 10.0,
+      "how_many_teaspoons_in_a_table_spoon": 50.0,
+      "how_much_is_an_ounce_of_gold": 70.0,
+      "how_old_are_you": 40.0,
+      "how_old_is_henry_winkler": 10.0,
+      "how_old_is_serena_williams": 30.0,
+      "how_tall_is_steph_curry": 0.0,
+      "how_tall_is_the_empire_state_building": 40.0,
+      "how_tall_is_the_rock": 30.0,
+      "is_a_tomato_a_fruit_or_a_vegetable": 50.0,
+      "pick_a_number": 80.0,
+      "play_npr": 100.0,
+      "set_a_timer_for_thirty_seconds": 30.0,
+      "set_volume_to_five": 90.0,
+      "surprise_me": 50.0,
+      "talk_like_a_pirate": 70.0,
+      "tell_me_a_barbecue_joke": 20.0,
+      "tell_me_a_coffee_joke": 0.0,
+      "tell_me_a_fun_fact": 0.0,
+      "tell_me_a_halloween_hack": 0.0,
+      "tell_me_a_joke": 0.0,
+      "tell_me_a_spooky_story": 30.0,
+      "tell_me_a_star_wars_joke": 0.0,
+      "tell_me_a_story_about_robots": 40.0,
+      "tell_me_some_good_news": 40.0,
+      "tell_me_something_weird": 0.0,
+      "translate_good_morning_to_spanish": 90.0,
+      "what's_the_weather_going_to_be_like_this_weekend": 20.0,
+      "what_are_the_most_popular_books_this_week": 80.0,
+      "what_are_the_standings_in_the_english_premier_league": 40.0,
+      "what_are_you_thankful_for": 20.0,
+      "what_happened_in_the_midterm_election": 50.0,
+      "what_is_gluten": 40.0,
+      "what_is_homecoming_about": 10.0,
+      "what_is_in_the_news": 100.0,
+      "what_is_my_sports_update": 80.0,
+      "what_is_my_traffic_report": 10.0,
+      "what_is_roblox": 40.0,
+      "what_is_the_afc_north_standings": 50.0,
+      "what_is_the_capital_of_spain": 10.0,
+      "what_is_the_colts_pats_score": 30.0,
+      "what_is_the_date_tomorrow": 50.0,
+      "what_is_the_number_one_song_this_week": 0.0,
+      "what_is_the_scariest_movie_of_all_time": 10.0,
+      "what_is_the_score_of_the_red_sox_game": 0.0,
+      "what_is_the_time_in_singapore": 10.0,
+      "what_is_the_weather": 10.0,
+      "what_is_zero_divided_by_zero": 30.0,
+      "what_movies_are_playing": 90.0,
+      "what_the_best_comedy_movie": 50.0,
+      "what_time_is_it": 40.0,
+      "what_time_is_it_in_hawaii": 30.0,
+      "what_time_is_sunset": 50.0,
+      "whats_another_word_for_happy": 50.0,
+      "whats_the_fourth_book_in_narnia_series": 80.0,
+      "whats_the_history_of_labor_day": 60.0,
+      "whats_the_longest_word": 50.0,
+      "whats_the_price_of_bitcoin": 40.0,
+      "whats_the_question_of_the_day": 100.0,
+      "whats_the_score_of_the_eagles_game": 10.0,
+      "whats_the_weather_for_sunday": 10.0,
+      "whats_trending": 70.0,
+      "whats_your_favorite_flower": 40.0,
+      "whats_your_favorite_hobby": 0.0,
+      "whats_your_favorite_sport": 40.0,
+      "when_does_daylight_saving_time_end": 10.0,
+      "when_is_hanukkah": 60.0,
+      "when_is_the_next_full_moon": 50.0,
+      "where_did_yoda_live": 70.0,
+      "where_is_mount_rushmore": 60.0,
+      "who_do_you_love": 0.0,
+      "who_is_in_mastodon": 60.0,
+      "who_is_winning_the_world_series": 40.0,
+      "who_is_your_favorite_poet": 30.0,
+      "who_plays_wolverine_in_xmen": 70.0,
+      "who_scored_for_the_golden_knights": 50.0,
+      "who_wrote_anna_karenina": 20.0,
+      "who_wrote_elevation": 30.0,
+      "whos_playing_monday_night_football": 90.0,
+      "whos_your_favorite_author": 0.0,
+      "whos_your_favorite_superhero": 10.0,
+      "why_do_leaves_change_color_in_the_fall": 70.0,
+      "will_it_rain_tomorrow": 10.0
+    },
+    "top_10": {
+      "what_is_my_sports_update": 80.0,
+      "whats_the_fourth_book_in_narnia_series": 80.0,
+      "set_volume_to_five": 90.0,
+      "translate_good_morning_to_spanish": 90.0,
+      "what_movies_are_playing": 90.0,
+      "whos_playing_monday_night_football": 90.0,
+      "alexa": 100.0,
+      "play_npr": 100.0,
+      "what_is_in_the_news": 100.0,
+      "whats_the_question_of_the_day": 100.0
+    },
+    "bottom_10": {
+      "give_me_a_dinosaur_fact": 0.0,
+      "how_tall_is_steph_curry": 0.0,
+      "tell_me_a_coffee_joke": 0.0,
+      "tell_me_a_fun_fact": 0.0,
+      "tell_me_a_halloween_hack": 0.0,
+      "tell_me_a_joke": 0.0,
+      "tell_me_a_star_wars_joke": 0.0,
+      "tell_me_something_weird": 0.0,
+      "what_is_the_number_one_song_this_week": 0.0,
+      "what_is_the_score_of_the_red_sox_game": 0.0
+    }
+  },
+  "confusion_top_pairs_llnb": [
+    {
+      "true": "how_many_days_in_a_year",
+      "predicted": "what_are_you_thankful_for",
+      "count": 6
+    },
+    {
+      "true": "what_is_my_sports_update",
+      "predicted": "play_npr",
+      "count": 6
+    },
+    {
+      "true": "talk_like_a_pirate",
+      "predicted": "surprise_me",
+      "count": 5
+    },
+    {
+      "true": "what_are_the_most_popular_books_this_week",
+      "predicted": "play_npr",
+      "count": 4
+    },
+    {
+      "true": "what_is_in_the_news",
+      "predicted": "play_npr",
+      "count": 4
+    },
+    {
+      "true": "where_is_mount_rushmore",
+      "predicted": "whats_the_longest_word",
+      "count": 4
+    },
+    {
+      "true": "who_is_in_mastodon",
+      "predicted": "why_do_leaves_change_color_in_the_fall",
+      "count": 4
+    },
+    {
+      "true": "who_wrote_anna_karenina",
+      "predicted": "who_is_your_favorite_poet",
+      "count": 4
+    },
+    {
+      "true": "how_far_away_is_the_moon",
+      "predicted": "tell_me_a_spooky_story",
+      "count": 3
+    },
+    {
+      "true": "surprise_me",
+      "predicted": "play_npr",
+      "count": 3
+    },
+    {
+      "true": "tell_me_a_halloween_hack",
+      "predicted": "how_many_seconds_in_a_year",
+      "count": 3
+    },
+    {
+      "true": "tell_me_a_spooky_story",
+      "predicted": "surprise_me",
+      "count": 3
+    },
+    {
+      "true": "what_happened_in_the_midterm_election",
+      "predicted": "how_many_days_until_thanksgiving",
+      "count": 3
+    },
+    {
+      "true": "what_is_the_number_one_song_this_week",
+      "predicted": "what_is_the_colts_pats_score",
+      "count": 3
+    },
+    {
+      "true": "whats_another_word_for_happy",
+      "predicted": "who_scored_for_the_golden_knights",
+      "count": 3
+    },
+    {
+      "true": "do_dogs_dream",
+      "predicted": "surprise_me",
+      "count": 2
+    },
+    {
+      "true": "do_you_like_cats_or_dogs",
+      "predicted": "give_me_a_dinosaur_fact",
+      "count": 2
+    },
+    {
+      "true": "do_you_like_cats_or_dogs",
+      "predicted": "how_tall_is_the_rock",
+      "count": 2
+    },
+    {
+      "true": "give_me_a_dinosaur_fact",
+      "predicted": "how_many_days_are_in_september",
+      "count": 2
+    },
+    {
+      "true": "give_me_a_dinosaur_fact",
+      "predicted": "whos_your_favorite_author",
+      "count": 2
+    }
+  ]
+}
