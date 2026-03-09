@@ -1,6 +1,5 @@
 # Traffic Fingerprinting: Reproduction and Extension
 
-**Md A Rahman** · RA Skills Assessment · DSMI Lab, OU Polytechnic Institute
 
 ---
 
