@@ -129,8 +129,8 @@ def extract_llnb_features(
     Rounding reduces the number of unique values, which helps
     Naive Bayes work better (fewer dimensions = less overfitting).
 
-    With rounding=100 and range [-1500, 1500]:
-        A 583-byte outgoing packet → +583 → rounded to +600 → bin 21
+    With rounding=60 (default) and range [-1500, 1500]:
+        A 583-byte outgoing packet → +583 → rounded to +600 → bin 35
     """
     signed = trace.signed_sizes()
 

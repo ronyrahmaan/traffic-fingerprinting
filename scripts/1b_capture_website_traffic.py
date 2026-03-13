@@ -5,8 +5,8 @@ browser + tcpdump, producing CSV traces in the same format as the Alexa
 voice command dataset: (index, time, size, direction).
 
 Dataset specification:
-    100 websites × 100 visits = 10,000 traces
-    10 categories × 10 sites per category
+    50-100 websites × 100 visits each (configurable via --sites flag)
+    10 categories × 10 sites per category (100 total defined)
     Matches the scale of published WF papers:
         - Wang & Goldberg (USENIX Security 2014): 100 × 90
         - Panchenko et al. (NDSS 2016): 100 × 90

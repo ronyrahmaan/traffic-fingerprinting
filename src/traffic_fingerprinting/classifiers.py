@@ -222,7 +222,7 @@ def cross_validate_sklearn(
 ) -> float:
     """Run 5-fold cross validation for sklearn-based classifiers.
 
-    classifier_name: one of "llnb", "vngpp", "psvm"
+    classifier_name: one of "llnb", "vngpp", "adaboost", "xgboost", "random_forest"
 
     Returns average accuracy across folds.
     """

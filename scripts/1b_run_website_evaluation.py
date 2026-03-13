@@ -10,7 +10,7 @@ Also generates:
   - Publication-quality figures
 
 Results saved to:
-  results/website_dataset/evaluation_results.json
+  results/website_eval/evaluation_results.json
   figures/website/*.png
 
 Usage:
@@ -63,7 +63,7 @@ ALEXA_CSV_DIR = BASE_DIR / "data" / "raw" / "VCFingerprinting" / "data" / "trace
 RESULTS_DIR = BASE_DIR / "results" / "website_eval"
 FIGURES_DIR = BASE_DIR / "figures" / "website"
 ALEXA_RESULTS_PATH = BASE_DIR / "results" / "alexa_dataset" / "expanded_results.json"
-MANIFEST_PATH = RESULTS_DIR / "capture_manifest.json"
+MANIFEST_PATH = BASE_DIR / "results" / "website_dataset" / "capture_manifest.json"
 
 # Minimum traces per site to include in evaluation
 # (filters out stray traces from sites 51-100 that have only 1-2 traces)
