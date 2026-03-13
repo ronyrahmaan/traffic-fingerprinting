@@ -54,7 +54,7 @@ PAPER_COLOR = "#55A868"
 
 # --- Sidebar ---
 st.sidebar.title("Traffic Fingerprinting")
-st.sidebar.caption("Md A Rahman — March 2026")
+st.sidebar.caption("Md A Rahman")
 st.sidebar.markdown("---")
 
 page = st.sidebar.radio(
@@ -384,7 +384,7 @@ elif page == "Alexa Reproduction":
 elif page == "Website Results":
     st.title("Part 1b: Website Traffic Fingerprinting")
     st.markdown(
-        "Since I don't have a smart speaker, I collected website traffic data instead. "
+        "Since I do not have a smart speaker, I collected website traffic data instead. "
         "I selected 50 websites across 5 categories "
         "(news, social media, e-commerce, tech, entertainment) and visited each site 100 times, "
         "collecting ~5,000 traces total."
@@ -903,5 +903,5 @@ elif page == "Dataset Statistics":
 # --- Footer ---
 st.markdown("---")
 st.caption(
-    "Md A Rahman · RA Skills Assessment · DSMI Lab, OU Polytechnic Institute · March 2026"
+    "Md A Rahman · DSMI Lab, OU Polytechnic Institute"
 )
