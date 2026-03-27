@@ -1,6 +1,5 @@
 # Traffic Fingerprinting: Reproduction and Extension
 
-**Md A Rahman** · DSMI Lab,
 
 ---
 
