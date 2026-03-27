@@ -1,6 +1,6 @@
 # Traffic Fingerprinting: Reproduction and Extension
 
-**Md A Rahman** · DSMI Lab, OU Polytechnic Institute
+**Md A Rahman** · DSMI Lab,
 
 ---
 
